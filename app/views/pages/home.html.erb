@@ -1,0 +1,20 @@
+<img src="./app/assets/images/logo.png" alt="Italian Trulli">
+
+
+<h1>Willkommen bei FREUNDLICHE ÜBERNAHME</h1>
+<h2>Ihrem Partner für Nachfolgeregelungen bei kleinen mittelständischen Unternehmen</h2>
+<br><br>
+<p>Wir arbeiten hart. Aktuell haben wir den <%=Time.now%></p>
+
+<h3>Unser Team besteht aus langjährigen Experten, die allesamt operative Erfahrung im Mittelstand haben:</h3>
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ol>
+
+<h4>Erkunden Sie unsere Seite. Wir haben sie so einfach gehalten, wie wir arbeiten.
+    Wir mögen keine komplizieren Lösungen.</h4>
+<%= link_to "Wer wir sind", about_path %> <br>
+<%= link_to "News", new_path %>
